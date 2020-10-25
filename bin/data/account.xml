@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AccountList>
+<Account id="admin" pwd="123" sequence="1"/>
+<Account id="anne5489" pwd="kim1234" sequence="2"/>
+<Account id="kyutse8" pwd="344106" sequence="3"/>
+</AccountList>

@@ -1,0 +1,5 @@
+unknown:???
+hunter_ma:마사범
+team:파티원
+goblin:고블린
+healer_ju:주희

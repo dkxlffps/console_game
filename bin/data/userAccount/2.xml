@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<CHARACTERS>
+    <CHARACTER growthcurve="high" type="int|dex">
+        <STATUS>
+            <ELEMENT_DEF>
+		<FIRE>0</FIRE>
+                <WATER>0</WATER>
+                <EARTH>0</EARTH>
+                <WIND>0</WIND>
+                <DARK>5</DARK>
+            </ELEMENT_DEF>
+            <CLASSNAME>E급 헌터</CLASSNAME>
+            <CLASSCODE>B01</CLASSCODE>
+            <CUREXP>0</CUREXP>
+            <EXP>25</EXP>
+            <HP>60</HP>
+            <MP>20</MP>
+            <CRITICAL>2</CRITICAL>
+            <PHDAMAGE>5</PHDAMAGE>
+            <ABDAMAGE>0</ABDAMAGE>
+            <PHDEF>6</PHDEF>
+            <ABDEF>0</ABDEF>
+            <HITRATE>60</HITRATE>
+            <EVASIONRATE>3</EVASIONRATE>
+            <STR>6</STR>
+            <INT>3</INT>
+            <DEX>5</DEX>
+            <LUCK>8</LUCK>
+            <ELEMENT_ATK>
+		<FIRE>0</FIRE>
+                <WATER>0</WATER>
+                <EARTH>0</EARTH>
+                <WIND>0</WIND>
+                <DARK>5</DARK>
+            </ELEMENT_ATK>
+        </STATUS>
+        <EQUIP>
+            <WEAPON ID=""/>
+            <HEAD ID=""/>
+            <ARMOR ID=""/>
+            <PANTS ID=""/>
+            <HAND ID=""/>
+            <FOOT ID=""/>
+            <RING1 ID=""/>
+            <RING2 ID=""/>
+            <NECKLACE ID=""/>
+        </EQUIP>
+        <MAINSINARIO ID="G_1_INTRO"/>
+        <QUESTS/>
+        <SKILLS/>
+        <ITEM SIZE="10"/>
+        <TITLE/>
+    </CHARACTER>
+</CHARACTERS>

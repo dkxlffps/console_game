@@ -1,0 +1,22 @@
+//message
+init_clear: Enter키를 누르면 시작합니다.
+sign_in: *아이디와 비밀번호를 입력해주세요.! ex) ID/Password
+sign_up: *생성하실 아이디와 비밀번호를 입력해주세요. ! ex) ID/Password
+sign_up_fault: 잘못 입력했습니다. 다시 입력해 주세요.
+fault_sign_in: 아이디가 없거나 틀렸습니다.
+success_sign_in: 접속에 성공했습니다.
+fault_sign_up: 계정 생성에 실패했습니다.
+success_sign_up: 계정 생성에 성공했습니다.
+introduce_gambler: 성장 속도는 느리지만 올스탯 만능형이라 성장이 끝에 가까워질수록 빛을보는 직업 입니다. !스킬도 물리/마법/속성 골고루 분포되어있어 어떤 타입의 적을 만나도 손쉽게 처리할 수 있습니다. !![TYPE] 만능형 ![성장속도] LOW
+introduce_hunter: 지상최약병기라는 수식어처럼 초기스탯이  최하에 가깝습니다. 하지만 어둠속성의 친화력과 지능, 민첩 그리고 성작속도가 탁월합니다. 마법공격과 속성공격의 스킬이 많습니다. ![TYPE] 지능/민첩형 ![성장속도] HIGH
+empty_character: 캐릭터가 없습니다. 캐릭터 생성으로 이동합니다.
+is_fault_insert: 잘못 입력 하셨습니다. 다시 입력해 주세요.
+
+//choice
+login_choice: [1] 로그인 ! [2] 계정 생성
+login_choice_2: *[1] 다시 시도! [2] 새로 생성
+login_select_character: [1] 캐릭터 선택! [2] 캐릭터 생성
+character_choice: *번호를 선택하시면 상세 정보를 볼 수 있습니다. !! [1] 열렙전사(도박사) ! [2] 성진우(E급 헌터)
+character_choice_request: *[1] 선택 ! [2] 돌아가기
+select_character: *[%d] [직업] %s [Lv] %s !
+back_request: ! [0] 뒤로가기
