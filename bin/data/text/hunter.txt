@@ -1,1 +1,15 @@
-hunter_intro_1:unknown:...... 이래서 E급은 끼지 말자니까..!!
+hunter_intro_1:hunter_ma:여~ 성씨!! 왔는가?? 추운데 오느라 고생했어~
+hunter_intro_2:me:뭘요...하하 오늘도 잘 부탁드릴게요.
+hunter_intro_3:team:성씨!성씨! 밥은 먹고 왔어?
+hunter_intro_4:me:네 김상식 아저씨. 신경 써주셔서 감사합니다~
+hunter_intro_5:team:저친구 강한 헌터인가? 다들 엄청 반기네?
+hunter_intro_6:team:크크 자네가 그만두고 바로와서 모르겠구먼. 저친구 별명이.. 인류최약 병기야.
+hunter_intro_7:team:최약? 최강 병기가 아니고??
+hunter_intro_8:hunter_ma:어이 마지막으로 성씨까지 왔으니 잡담은 그만들 하고 다들 주목해주쇼!
+hunter_intro_9:hunter_ma:오늘도 즐겁게 한탕하러 가는데 제가 이런말 할 정도는 아니지만 제가 파티장으로 여러분들을 인솔할까 하는데 다들 괜찮으십니까?
+hunter_intro_10:team:마사범이 여기서 등급도 제일 높잖수~ 나는 찬성이오!
+hunter_intro_11:team:마사범 아니면 누가 맡을라구 그래. 오랜만에 마사범 실력 구경하겠군!
+hunter_intro_12:hunter_ma:자~그럼 파티장도 정해 졌으니 다들 가 봅시다!
+hunter_intro_13:healer_ju:진우씨! 오늘은 다치지 않게 조심해요~
+hunter_intro_14:me:네.. 하하
+hunter_intro_15:healer_ju:그럼 어서가죠.

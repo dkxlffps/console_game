@@ -47,12 +47,15 @@ public class messageUtil extends Thread{
 	public void SinarioMessage(String [] nameMessage) throws Exception {
 		System.out.println(line);
 		String name = String.format(CONSTANT.NPC_NAME_FORMAT, nameMessage[0]);
-		for(int i=0; i<name.length();i++) {
-			Thread.sleep(CONSTANT.MESSAGE_THREAD_PERSEC);
-			System.out.print(name.charAt(i));
+		if(!name.equals("none")) {
+			for(int i=0; i<name.length();i++) {
+				Thread.sleep(CONSTANT.MESSAGE_THREAD_PERSEC);
+				System.out.print(name.charAt(i));
+			}
+			System.out.print("\n\n");
 		}
-		System.out.print("\n\n");
 		message(nameMessage[1]);
+		System.out.println("\n");
 		System.out.println(line);
 	}
 	

@@ -3,7 +3,7 @@ package Constant;
 public class constant {
 	
 	// DATA FOLDER PATH
-	public String DATA_FOLDER_PATH = "C:\\Users\\김지훈\\eclipse-workspace\\Sample\\src\\data";
+	public String DATA_FOLDER_PATH = "C:\\gitClone\\console_game\\src\\data";
 	public String USER_ACCOUNT_PATH ="\\userAccount\\%s.xml";
 	public String DEFAULT_CHARACTER_PATH = "\\character\\%s.xml";
 	public String MESSAGE_PATH = "\\text\\message.txt";
@@ -15,7 +15,7 @@ public class constant {
 	public String DATA_KEY_VALUE_SEPARETOR = ":";
 	public String ACCOUNT_SEPARETOR = "/";
 	public String NEXT_LINE_IGNORE_SEPARETOR = "*";
-	public String NEXT_LINE_MASTER_KEY = "!";
+	public String NEXT_LINE_MASTER_KEY = "_";
 	public String NPC_NAME_KEY_SEPARATOR = "#";
 	
 	// DATA RESOURCE
