@@ -25,7 +25,7 @@ public class mainSinarioController {
 	public void g_1_intro() throws Exception {
 		
 		String sinarioSequenceKey = "hunter_intro_%d";
-		int sinarioLength = 5;
+		int sinarioLength = 15;
 		int currentLength = 0;
 		while(sinarioLength > currentLength) {
 			String sequence = String.format(sinarioSequenceKey, currentLength+1);

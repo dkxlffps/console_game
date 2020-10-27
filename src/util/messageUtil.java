@@ -1,5 +1,7 @@
 package util;
 
+import java.util.Scanner;
+
 import Constant.constant;
 
 public class messageUtil extends Thread{
@@ -7,6 +9,11 @@ public class messageUtil extends Thread{
 	
 	private String line = "";
 	private String lineClear = "";
+	
+	private isSkip skip;
+	
+	private boolean noSleep=false;
+	private String type;
 	
 	public messageUtil() {
 		for(int i = 0; i < CONSTANT.MESSAGE_LINE_MAX_LENGTH; i++) {
@@ -19,22 +26,24 @@ public class messageUtil extends Thread{
 	}
 	
 	public String run(String type , Object data) throws Exception {
-		
+		this.type = type;
+		this.noSleep = false;
+		skip = new isSkip();
+		skip.start();
 		switch(type) {
 		case "text"
 		  : {
 		      String message = (String) data;
 		      TextMessage(message);
-		      
 		  }
 		  break;
 		case "sinario"
 		  : {
-			  
 			  String []nameMessage = (String[]) data;
 			  SinarioMessage(nameMessage);
 		  }
 		}
+		skip.sc.reset();
 		return type;
 	}
 	
@@ -47,12 +56,24 @@ public class messageUtil extends Thread{
 	public void SinarioMessage(String [] nameMessage) throws Exception {
 		System.out.println(line);
 		String name = String.format(CONSTANT.NPC_NAME_FORMAT, nameMessage[0]);
-		for(int i=0; i<name.length();i++) {
-			Thread.sleep(CONSTANT.MESSAGE_THREAD_PERSEC);
-			System.out.print(name.charAt(i));
+		if(!name.equals("none")) {
+			for(int i=0; i<name.length();i++) {
+				if(skip.skip) break;
+				Thread.sleep(CONSTANT.MESSAGE_THREAD_PERSEC);
+				System.out.print(name.charAt(i));
+			}
+			System.out.print("\n\n");
 		}
-		System.out.print("\n\n");
+		if(skip.skip) {
+			Clear();
+			this.noSleep=true;
+			System.out.println(line);
+			if(!name.equals("none"))
+				System.out.println(name);
+		}
+		
 		message(nameMessage[1]);
+		System.out.println("\n");
 		System.out.println(line);
 	}
 	
@@ -62,7 +83,18 @@ public class messageUtil extends Thread{
 		int currentLength = 0;
 		String _this ="";
 		for(int i = 0 ; i < text.length(); i++) {
-			Thread.sleep(CONSTANT.MESSAGE_THREAD_PERSEC);
+			if(this.skip.skip) {
+				this.skip.skip = false;
+				this.noSleep=true;
+				if(type.equals("text")) {
+					Clear();
+					System.out.println(line);
+				}
+				message(text);
+			}
+			
+			if(!this.noSleep)
+				Thread.sleep(CONSTANT.MESSAGE_THREAD_PERSEC);
 			
 			if(!ignore_next_line && CONSTANT.MESSAGE_LINE_MAX_LENGTH == currentLength) {
 				currentLength = 0;
@@ -83,5 +115,19 @@ public class messageUtil extends Thread{
 	
 	public void Clear() {
 		System.out.println(lineClear);
+	}
+}
+
+class isSkip extends Thread {
+	Scanner sc = new Scanner(System.in);
+	boolean skip;
+	@Override
+	public void run() {
+		try {
+		this.skip=false;
+		sc.nextLine();
+		this.skip = true;
+		this.notify();
+		}catch(Exception e) {}
 	}
 }

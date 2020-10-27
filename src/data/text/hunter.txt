@@ -1,1 +1,18 @@
-hunter_intro_1:unknown:...... 이래서 E급은 끼지 말자니까..!!
+hunter_intro_1:none:[E급 헌터 성진우]
+hunter_intro_2:none:일반인보다 조금 튼튼하고 회복이 약간 빠른 걸 빼면 헌터라고 불리기도 민망한 정도이다..
+hunter_intro_3:none:나라고 좋아서 하는일은 아니다. _고졸 출신에 딱히 잘하는 것도 없는 내게, 이 헌터라는 직업은 어쩔 수 없는 선택이다.
+hunter_intro_4:team:어이 성씨! _이제 왔는가?
+hunter_intro_5:me:네 하하 _오늘도 잘 부탁드릴게요.
+hunter_intro_6:team:저 친구 강한 친구인가? _다들 엄청 반기네
+hunter_intro_7:team:크크.. _자네가 그만두고 바로 와서 모르겠구먼._저 친구 별명이..
+hunter_intro_8:team:[인류 최약병기]야
+hunter_intro_9:team:최약병기? _최강병기가 아니고?
+hunter_intro_10:team:이 사람아, 그건 S급인 최종인 헌터에게 붙이는 별명이고. _성씨는 [최약병기]_E급 게이트에서 다쳐 입원을 할 정도니까..
+hunter_intro_11:team:아마 헌터 중에서 제일 약할걸.
+hunter_intro_12:team:그러니 저 친구가 호출된 던전은 약하다는 증거야.
+hunter_intro_13:hunter_ma:어이! 언제까지 잡담만 할건가. 어서 클리어나 하고 돈이나 벌자구
+hunter_intro_14:team:어어 그래그래 다 모였으니 출발 하자구.
+hunter_intro_15:hunter_ma:성씨. 신경쓰지말게. 저녀석들은 같은 E급이면서 무슨.. 쯧
+hunter_intro_16:me:괜찮아요. 하하..
+hunter_intro_17:team:자 그럼 가 봅시다!
+hunter_intro_18:hunter_ma:성씨, 우리 뒤에서 안다치게 잘 사리라고~.
