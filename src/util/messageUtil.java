@@ -29,6 +29,7 @@ public class messageUtil extends Thread{
 		this.type = type;
 		this.noSleep = false;
 		skip = new isSkip();
+		skip.isRun = true;
 		skip.start();
 		switch(type) {
 		case "text"
@@ -44,6 +45,7 @@ public class messageUtil extends Thread{
 		  }
 		}
 		skip.sc.reset();
+		skip.isRun=false;
 		return type;
 	}
 	
@@ -121,13 +123,13 @@ public class messageUtil extends Thread{
 class isSkip extends Thread {
 	Scanner sc = new Scanner(System.in);
 	boolean skip;
+	boolean isRun;
 	@Override
 	public void run() {
-		try {
 		this.skip=false;
-		sc.nextLine();
-		this.skip = true;
-		this.notify();
-		}catch(Exception e) {}
+		while(isRun) {
+			if(sc.hasNextLine()) break;
+		}
+		this.skip=true;
 	}
 }
