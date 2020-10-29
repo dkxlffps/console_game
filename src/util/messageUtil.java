@@ -1,5 +1,6 @@
 package util;
 
+import java.io.Console;
 import java.util.Scanner;
 
 import Constant.constant;
@@ -44,8 +45,8 @@ public class messageUtil extends Thread{
 			  SinarioMessage(nameMessage);
 		  }
 		}
-		skip.sc.reset();
 		skip.isRun=false;
+		skip.sc.close();
 		return type;
 	}
 	
@@ -121,7 +122,10 @@ public class messageUtil extends Thread{
 }
 
 class isSkip extends Thread {
-	Scanner sc = new Scanner(System.in);
+	Console con = System.console();
+	
+	Scanner sc = new Scanner(con.reader());
+	
 	boolean skip;
 	boolean isRun;
 	@Override
