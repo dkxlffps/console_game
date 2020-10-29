@@ -124,7 +124,7 @@ public class messageUtil extends Thread{
 class isSkip extends Thread {
 	Console con = System.console();
 	
-	Scanner sc = new Scanner(con.reader());
+	Scanner sc = new Scanner(System.console().reader());
 	
 	boolean skip;
 	boolean isRun;
