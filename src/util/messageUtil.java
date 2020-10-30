@@ -29,9 +29,9 @@ public class messageUtil extends Thread{
 	public String run(String type , Object data) throws Exception {
 		this.type = type;
 		this.noSleep = false;
-		skip = new isSkip();
-		skip.isRun = true;
-		skip.start();
+//		skip = new isSkip();
+//		skip.isRun = true;
+//		skip.start();
 		switch(type) {
 		case "text"
 		  : {
@@ -45,8 +45,8 @@ public class messageUtil extends Thread{
 			  SinarioMessage(nameMessage);
 		  }
 		}
-		skip.isRun=false;
-		skip.sc.close();
+//		skip.isRun=false;
+//		skip.sc.close();
 		return type;
 	}
 	
@@ -59,21 +59,21 @@ public class messageUtil extends Thread{
 	public void SinarioMessage(String [] nameMessage) throws Exception {
 		System.out.println(line);
 		String name = String.format(CONSTANT.NPC_NAME_FORMAT, nameMessage[0]);
-		if(!name.equals("none")) {
+		if(!name.equals("[NONE]")) {
 			for(int i=0; i<name.length();i++) {
-				if(skip.skip) break;
+//				if(skip.skip) break;
 				Thread.sleep(CONSTANT.MESSAGE_THREAD_PERSEC);
 				System.out.print(name.charAt(i));
 			}
 			System.out.print("\n\n");
 		}
-		if(skip.skip) {
-			Clear();
-			this.noSleep=true;
-			System.out.println(line);
-			if(!name.equals("none"))
-				System.out.println(name);
-		}
+//		if(skip.skip) {
+//			Clear();
+//			this.noSleep=true;
+//			System.out.println(line);
+//			if(!name.equals("none"))
+//				System.out.println(name);
+//		}
 		
 		message(nameMessage[1]);
 		System.out.println("\n");
@@ -86,15 +86,15 @@ public class messageUtil extends Thread{
 		int currentLength = 0;
 		String _this ="";
 		for(int i = 0 ; i < text.length(); i++) {
-			if(this.skip.skip) {
-				this.skip.skip = false;
-				this.noSleep=true;
-				if(type.equals("text")) {
-					Clear();
-					System.out.println(line);
-				}
-				message(text);
-			}
+//			if(this.skip.skip) {
+//				this.skip.skip = false;
+//				this.noSleep=true;
+//				if(type.equals("text")) {
+//					Clear();
+//					System.out.println(line);
+//				}
+//				message(text);
+//			}
 			
 			if(!this.noSleep)
 				Thread.sleep(CONSTANT.MESSAGE_THREAD_PERSEC);
