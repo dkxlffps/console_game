@@ -43,8 +43,6 @@ public class messageUtil extends Thread{
 			  SinarioMessage(nameMessage);
 		  }
 		}
-//		skip.isRun=false;
-//		skip.sc.close();
 		return type;
 	}
 	
