@@ -26,7 +26,7 @@ public class messageUtil extends Thread{
 		}
 	}
 	
-	// message Controller
+	// message Controller/
 	public String run(String type , Object data) throws Exception {
 		this.type = type;
 		this.noSleep = false;
