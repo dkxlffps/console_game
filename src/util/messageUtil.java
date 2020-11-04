@@ -30,9 +30,6 @@ public class messageUtil extends Thread{
 	public String run(String type , Object data) throws Exception {
 		this.type = type;
 		this.noSleep = false;
-//		skip = new isSkip();
-//		skip.isRun = true;
-//		skip.start();
 		switch(type) {
 		case "text"
 		  : {
